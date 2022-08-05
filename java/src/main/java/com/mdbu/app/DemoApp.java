@@ -21,17 +21,24 @@ public class DemoApp {
         Crud crud = new Crud(client);
         crud.insertOneDocument();
         crud.insertManyDocuments();
+
+        crud.findAllCheckingAccounts();
+        crud.findAllCheckingAccounts();
+
         crud.updateOneDocument();
+        crud.updateManyDocuments();
+
         crud.deleteDocument();
 
         //Transaction
-        Transaction tx = new Transaction(client);
-        tx.transferFunds();
+        Transaction txn = new Transaction(client);
+        txn.transferFunds();
 
         Aggregation agg = new Aggregation(client);
         agg.showAccountTypeSummary();
         agg.findAccountById("MDB727578791");
         agg.sortCheckingAccountsDescending();
+
         //Close the client
         client.close();
     }

@@ -35,7 +35,6 @@ public final class MongoClientSingleton {
     private String getConnectionString() {
         String connStr = null;
         try (InputStream input = getClass().getClassLoader().getResourceAsStream("atlas.properties")) {
-
             Properties prop = new Properties();
 
             if (input == null) {
