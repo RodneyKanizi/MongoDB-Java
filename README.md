@@ -1,10 +1,10 @@
-# Get-Started Java
+# Using MongoDB Java Driver
 
 Repository to help getting started with MongoDB Java driver connecting to MongoDB Atlas.
 
 ## Information
 
-This Get-Started project uses [MongoDB Java driver](https://mongodb.github.io/mongo-java-driver/) version 4.5.1 (sync) by default. Although you can change the driver version, the provided code example was only tested against the default version of MongoDB driver. There is no guarantee that the code sample will work for all possible versions of the driver.
+This project uses [MongoDB Java driver](https://mongodb.github.io/mongo-java-driver/) version 4.7.1 (sync) by default. Although you can change the driver version, the provided code example was only tested against the default version of MongoDB driver. There is no guarantee that the code sample will work for all possible versions of the driver.
 
 ## Pre-requisites 
 
