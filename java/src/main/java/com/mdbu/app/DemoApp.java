@@ -2,6 +2,7 @@ package com.mdbu.app;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
+import com.mdbu.aggregations.Aggregation;
 import com.mdbu.crud.Crud;
 import com.mdbu.transactions.Transaction;
 import com.mdbu.utils.MongoClientSingleton;
@@ -34,6 +35,10 @@ public class DemoApp {
         Transaction tx = new Transaction(client);
         tx.transferFunds();
 
+        Aggregation agg = new Aggregation(client);
+        agg.showAccountTypeSummary();
+        agg.findAccountById("MDB727578791");
+        agg.sortCheckingAccountsDescending();
         //Close the client
         client.close();
     }
