@@ -19,16 +19,9 @@ public class DemoApp {
         MongoClient client = MongoClientSingleton.getClient();
 
         Crud crud = new Crud(client);
-        // Insert a single document
         crud.insertOneDocument();
-
-        // Insert many documents
         crud.insertManyDocuments();
-
-        // Update a single document
         crud.updateOneDocument();
-
-        // Delete a document
         crud.deleteDocument();
 
         //Transaction
